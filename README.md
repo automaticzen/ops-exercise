@@ -13,7 +13,7 @@
   * Use Berkshelf for dependancy management, please no vendor drops (but version locks are good!)
   * Should leverage community cookbooks when it make sense.
   * Shoud be testable using Vagrant.
- 
+
 ###Nice to have
   * Security hardening and user management.
   * Should converge both in chef-zero and chef-client modes.
