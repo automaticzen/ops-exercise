@@ -22,4 +22,19 @@
   * Think in terms of re-usable components.
   * Bonus points for a rake/Thor file for common tasks.
 
+### Ben's Implementation
+  * community cookbooks for wordpress/mysql, nginx, hhvm, with some wrapper cookbooks to allow for wiw-specific variances
+  * Vagrant uses chef-client
+  * test-kitchen uses chef-zero
+  * serverspec for testing
+  * encrypted data bag for credentials
+  * slightly i-have-no-idea-what-im-doing-dog.gif for some aspects of this exercise, as I've mostly used chef to build images for our legacy stack
+  * glad to have had the chance to spike on this and learn some new things about Chef... thanks!
 
+### Known issues in Ben's implementation
+
+  * Wordpress cookbook seems to be getting stuck on executing grants for its db user:
+```
+Error executing action `grant` on resource 'mysql_database_user[wordpressuser]'
+```
+  * I ran out of time chasing down the features and did not provide docs/README for the wrapper cookbooks

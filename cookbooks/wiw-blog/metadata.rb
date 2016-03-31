@@ -1,0 +1,11 @@
+name             'wiw-blog'
+maintainer       'YOUR_COMPANY_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures wiw-blog'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '1.0.0'
+depends          'wordpress', '~> 3.0.0'
+depends          'wiw-os-ubuntu', '~> 1.0.0'
+depends          'wiw-mysql', '~> 1.0.0'
+depends          'wiw-nginx', '~> 1.0.0'

@@ -1,0 +1,14 @@
+server {
+
+  listen <%= @port %>;
+  include hhvm.conf;
+  error_log   /var/log/nginx/<%= @name %>.error.log;
+  access_log  /var/log/nginx/<%= @name %>.access.log;
+  root <%= @root %>;
+  index index.php;
+
+  location / {
+      try_files $uri $uri/ /index.php?$args;
+  }
+
+}

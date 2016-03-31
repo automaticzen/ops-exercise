@@ -1,0 +1,7 @@
+source 'https://supermarket.chef.io'
+
+cookbook 'wiw-mysql', '~> 1.0.0', path: '../wiw-mysql'
+cookbook 'wiw-nginx', '~> 1.0.0', path: '../wiw-nginx'
+cookbook 'wiw-os-ubuntu', '~> 1.0.0', path: '../wiw-os-ubuntu'
+
+metadata
