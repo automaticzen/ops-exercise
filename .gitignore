@@ -1,0 +1,7 @@
+.kitchen
+.vagrant
+*.pem
+knife.rb
+Berksfile.lock
+.kitchen/
+.kitchen.local.yml
